@@ -17,17 +17,11 @@ aside{
     color: #333;
     text-align: center;
 }
-aside img{
-    width: 200px;
-    height: auto;
-}
+
 main{
     max-width: 840px;
 }
-main img {
-    width: 150px;
-    height: auto;
-}
+
 h1 {
     color: darkblue;
 }

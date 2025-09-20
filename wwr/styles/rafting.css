@@ -48,10 +48,19 @@ h1 {
     background-color: var(--accent1-color);
     color: #fff;
 }
+
+.hero article{
+    position: absolute;
+    bottom: 10px;
+    background-color: var(--accent1-color);
+    opacity: 0.8;
+    color: #fff;
+}
 .hero article img {
     float: right;
     width: 125px;
 }
+
 footer img {
     width: 128px;
     height: auto;

@@ -106,6 +106,7 @@ section.history img{
     justify-self: center;
     grid-area: image;
     border-radius: 8px;
+    align-self: center;
 }
 section.history p:first-of-type{
     grid-area: text-left;
@@ -140,8 +141,22 @@ section.history p:last-of-type{
     color: var(--primary-color);
 }
 
-
-footer img {
-    width: 128px;
-    height: auto;
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+section.adventures h2 {
+    text-align: center;
+}
+footer .socialmedia {
+    display: flex;
+    gap: 16px;
+}
+footer .socialmedia img {
+    width: 32px;
+    height: 32px;
 }

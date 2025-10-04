@@ -15,6 +15,32 @@ body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 20px;
+    padding: 16px;
+}
+header img {
+    width: 150px;
+    height: auto;
+}
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+header nav ul li a:hover{
+    color: var(--secondary-color);
+}
 header, main, footer {
     width: 840px;
     margin: auto;
@@ -60,8 +86,77 @@ h1 {
     float: right;
     width: 125px;
 }
-
-footer img {
-    width: 128px;
+section.history{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "header header header"
+        "text-left image text-right";
+    gap: 20px;
+    border-radius: 8px;
+}
+section.history h2{
+    grid-area: header;
+    text-align: center;
+}
+section.history img{
+    width: 100%;
     height: auto;
+    justify-self: center;
+    grid-area: image;
+    border-radius: 8px;
+    align-self: center;
+}
+section.history p:first-of-type{
+    grid-area: text-left;
+    text-align: justify;
+}
+section.history p:last-of-type{
+    grid-area: text-right;
+    text-align: justify;
+}
+
+.adventure-gallery {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto; /* Para dispositivos pequeños */
+    padding: 16px 0;
+}
+
+.adventure-gallery figure {
+    flex: 1 0 18%; /* 5 imágenes horizontales con un pequeño gap */
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+section.adventures h2 {
+    text-align: center;
+}
+footer .socialmedia {
+    display: flex;
+    gap: 16px;
+}
+footer .socialmedia img {
+    width: 32px;
+    height: 32px;
 }

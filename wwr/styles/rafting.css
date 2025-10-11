@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary-color: #055a05;
     --secondary-color: #f4a261;
     --accent1-color: #264653;
@@ -6,15 +6,18 @@
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
+
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -22,10 +25,12 @@ header {
     gap: 20px;
     padding: 16px;
 }
+
 header img {
     width: 150px;
     height: auto;
 }
+
 header nav ul {
     display: flex;
     justify-content: flex-end;
@@ -33,37 +38,52 @@ header nav ul {
     list-style: none;
     gap: 20px;
 }
-header nav ul li a{
+
+header nav ul li a {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;
 }
-header nav ul li a:hover{
+
+header nav ul li a:hover {
     color: var(--secondary-color);
 }
-header, main, footer {
+
+header,
+main,
+footer {
     width: 840px;
     margin: auto;
 }
-h1, h2{
+
+h1,
+h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-nav, p, section, article{
+
+nav,
+p,
+section,
+article {
     margin: 16px;
     padding: 8px;
 }
+
 .socialmedia a {
     text-decoration: none;
 }
+
 .hero {
     position: relative;
 }
-.hero img{
+
+.hero img {
     display: block;
     width: 100%;
     height: auto;
 }
+
 h1 {
     position: absolute;
     top: 20px;
@@ -75,32 +95,36 @@ h1 {
     color: #fff;
 }
 
-.hero article{
+.hero article {
     position: absolute;
     bottom: 10px;
     background-color: var(--accent1-color);
     opacity: 0.8;
     color: #fff;
 }
+
 .hero article img {
     float: right;
     width: 125px;
 }
-section.history{
+
+section.history {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "header header header"
         "text-left image text-right";
     gap: 20px;
     border-radius: 8px;
 }
-section.history h2{
+
+section.history h2 {
     grid-area: header;
     text-align: center;
 }
-section.history img{
+
+section.history img {
     width: 100%;
     height: auto;
     justify-self: center;
@@ -108,11 +132,13 @@ section.history img{
     border-radius: 8px;
     align-self: center;
 }
-section.history p:first-of-type{
+
+section.history p:first-of-type {
     grid-area: text-left;
     text-align: justify;
 }
-section.history p:last-of-type{
+
+section.history p:last-of-type {
     grid-area: text-right;
     text-align: justify;
 }
@@ -120,12 +146,12 @@ section.history p:last-of-type{
 .adventure-gallery {
     display: flex;
     gap: 10px;
-    overflow-x: auto; /* Para dispositivos pequeños */
+    overflow-x: auto;
     padding: 16px 0;
 }
 
 .adventure-gallery figure {
-    flex: 1 0 18%; /* 5 imágenes horizontales con un pequeño gap */
+    flex: 1 0 18%;
     text-align: center;
 }
 
@@ -141,7 +167,7 @@ section.history p:last-of-type{
     color: var(--primary-color);
 }
 
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -149,27 +175,28 @@ footer{
     background-color: var(--accent2-color);
     color: var(--accent1-color);
 }
+
 section.adventures h2 {
     text-align: center;
 }
+
 footer .socialmedia {
     display: flex;
     gap: 16px;
 }
+
 footer .socialmedia img {
     width: 32px;
     height: 32px;
 }
 
 
-/* === CONTACT PAGE STYLES === */
 
 main h1 {
     text-align: center;
     margin-top: 1rem;
 }
 
-/* Company Info Section */
 .company-info {
     text-align: center;
 }
@@ -190,17 +217,17 @@ main h1 {
     height: 250px;
     border: none;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Contact Form */
 .contact-form {
+    display: static;
     max-width: 600px;
     margin: 2rem auto;
     background-color: #f9f9f9;
     border-radius: 8px;
     padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form form {
@@ -264,7 +291,6 @@ button[type="submit"]:hover {
     color: var(--accent1-color);
 }
 
-/* Employees Section */
 .employees {
     text-align: center;
     margin: 3rem 0;
@@ -290,7 +316,7 @@ button[type="submit"]:hover {
     width: 100%;
     height: 270px;
     border-radius: 50%;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .employee-gallery figcaption {
@@ -299,6 +325,115 @@ button[type="submit"]:hover {
     color: var(--primary-color);
 }
 
-.container h1{
+.container h1 {
     position: relative;
+}
+
+.col-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 15px;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.cta-btn:hover {
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+}
+
+.newsletter {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+/* === Trips Page Additions === */
+
+.featured-trips {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.trip-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 1rem;
+}
+
+.trip {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.trip img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.trip h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.trip p {
+  text-align: justify;
+  margin: 0.5rem 0;
+}
+
+.trip-table {
+  background-color: var(--accent2-color);
+  border-radius: 8px;
+  margin: 2rem 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.trip-table th,
+.trip-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+}
+
+.trip-table th {
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+.trip-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.centered {
+  text-align: center;
+  margin-top: 1.5rem;
 }
